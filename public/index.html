@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catan Helper API</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero-card reveal">
+      <p class="kicker">Problem Set #1 · Creative HTTP Server</p>
+      <h1>Catan Helper API</h1>
+      <p class="headline">A Creative HTTP Server for Game Information</p>
+      <p class="description">
+        A custom mini framework that serves a Catan-style helper API with routes,
+        static files, JSON responses, path parameters, query strings, and POST support.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="/api">Open API Index</a>
+        <a class="button secondary" href="/api/resources">View Resources</a>
+      </div>
+    </section>
+
+    <section class="tiles reveal delay-one" aria-label="API shortcuts">
+      <a class="tile" href="/api/resources">
+        <span class="tile-icon">🌲</span>
+        <h2>Resources</h2>
+        <p>Wood, brick, wheat, sheep, and ore with their uses.</p>
+        <code>GET /api/resources</code>
+      </a>
+
+      <a class="tile" href="/api/building-costs">
+        <span class="tile-icon">🏘️</span>
+        <h2>Building Costs</h2>
+        <p>Roads, settlements, cities, and development cards.</p>
+        <code>GET /api/building-costs</code>
+      </a>
+
+      <a class="tile" href="/api/development-cards">
+        <span class="tile-icon">🃏</span>
+        <h2>Development Cards</h2>
+        <p>Card names and helper explanations for each effect.</p>
+        <code>GET /api/development-cards</code>
+      </a>
+
+      <a class="tile" href="/api/players">
+        <span class="tile-icon">👥</span>
+        <h2>Players</h2>
+        <p>Example player data and score information.</p>
+        <code>GET /api/players</code>
+      </a>
+
+      <a class="tile" href="/api/dice-odds">
+        <span class="tile-icon">🎲</span>
+        <h2>Dice Odds</h2>
+        <p>Probability table for dice rolls from 2 to 12.</p>
+        <code>GET /api/dice-odds</code>
+      </a>
+
+      <a class="tile" href="/api/tips">
+        <span class="tile-icon">💡</span>
+        <h2>Game Tips</h2>
+        <p>Small strategy tips for smarter island building.</p>
+        <code>GET /api/tips</code>
+      </a>
+    </section>
+
+    <section class="requirements reveal delay-two">
+      <article>
+        <h3>Static Files</h3>
+        <p>This page, CSS, JavaScript, and the board background image are served from the public folder.</p>
+      </article>
+      <article>
+        <h3>Routes</h3>
+        <p>The server supports route handlers, path parameters, query strings, and method-based matching.</p>
+      </article>
+      <article>
+        <h3>Creative API</h3>
+        <p>The framework uses Catan-inspired names: <code>settle</code>, <code>harbor</code>, and <code>trade</code>.</p>
+      </article>
+      <article>
+        <h3>POST Support</h3>
+        <p>Players can be added with <code>POST /api/players</code> using a JSON body.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
